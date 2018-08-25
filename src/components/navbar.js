@@ -5,13 +5,13 @@ import "materialize-css/dist/css/materialize.css";
 import './navbar.css'
 
 const contato = {
-  pathname: "/contato"
+  pathname: "/"
 };
 const blog = {
-  pathname: "/blog"
+  pathname: "/"
 };
 const sobrePath = {
-  pathname: "/sobre"
+  pathname: "/"
 };
 const homePath = {
   pathname: "/"
@@ -40,22 +40,22 @@ class Navbar extends Component {
             </button>
 
             <ul className="right hide-on-med-and-down">
-              <li className="font-nav style-button">
+              <li>
                 <Link to={homePath}>Home</Link>
               </li>
               <li>
-                <Link to={sobrePath} className="font-nav style-button">
-                  Nossa História
+                <Link to={sobrePath}>
+                  Link 1
                 </Link>
               </li>
               <li>
-                <Link to={blog} className="font-nav style-button">
-                  Blog
+                <Link to={blog}>
+                  Link 2
                 </Link>
               </li>
               <li>
-                <Link to={contato} className="font-nav style-button">
-                  Contato
+                <Link to={contato}>
+                  Link 3
                 </Link>
               </li>
             </ul>
@@ -65,26 +65,22 @@ class Navbar extends Component {
         <ul className="sidenav" id="slide-out">
           <li>
             <Link to={homePath} className="font-nav style-button sidenav-close">
-              <i className="small material-icons">home</i>
               Home
             </Link>
           </li>
           <li>
             <Link to={sobrePath} className="font-nav style-button sidenav-close">
-              <i className="small material-icons">face</i>
-              Nossa História
+              Link 1
             </Link>
           </li>
           <li>
             <Link to={blog} className="font-nav style-button sidenav-close">
-              <i className="small material-icons">library_books</i>
-              Blog
+              Link 2
             </Link>
           </li>
           <li>
             <Link to={contato} className="font-nav style-button sidenav-close">
-              <i className="small material-icons">message</i>
-              Contato
+              Link 3
             </Link>
           </li>
         </ul>
