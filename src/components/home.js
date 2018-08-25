@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import FullVideo from "./components/full-video"
-import "./App.css";
+import Header from "./header";
+import './home.css'
 
 class Home extends Component {
   render() {
     return (
-      <FullVideo video='code.mp4'/>
+      <div>
+        <Header />
+        <div className='space'></div>
+      </div>
     );
   }
 }
