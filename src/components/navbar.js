@@ -30,8 +30,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div id="nav-container">
-        <nav className="transparent z-depth-0 border-nav">
+      <div id="nav-container" className='navbar-fixed'>
+        <nav>
           <div className="nav-wrapper container">
             <a href="./" className="brand-logo left">
               Logo
