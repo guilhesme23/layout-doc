@@ -29,25 +29,19 @@ class Navbar extends Component {
   }
 
   render() {
-    return (
-      <div id="nav-container" className='navbar-fixed'>
+    return <div id="nav-container" className="navbar-fixed">
         <nav>
           <div className="nav-wrapper container">
             <a href="./" className="brand-logo left">
               Logo
             </a>
-            <button
-              data-target="slide-out"
-              className="sidenav-trigger right sidenav-button hide-on-large-only"
-            >
+            <button data-target="slide-out" className="sidenav-trigger right sidenav-button hide-on-large-only">
               <i className="material-icons">menu</i>
             </button>
 
             <ul className="right hide-on-med-and-down">
-              <li>
-                <Link to={homePath} className="font-nav style-button">
-                  Home
-                </Link>
+              <li className="font-nav style-button">
+                <Link to={homePath}>Home</Link>
               </li>
               <li>
                 <Link to={sobrePath} className="font-nav style-button">
@@ -76,10 +70,7 @@ class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <Link
-              to={sobrePath}
-              className="font-nav style-button sidenav-close"
-            >
+            <Link to={sobrePath} className="font-nav style-button sidenav-close">
               <i className="small material-icons">face</i>
               Nossa História
             </Link>
@@ -97,8 +88,7 @@ class Navbar extends Component {
             </Link>
           </li>
         </ul>
-      </div>
-    );
+      </div>;
   }
 }
 
