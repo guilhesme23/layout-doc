@@ -25,6 +25,12 @@ class Navbar extends Component {
       inDuration: 250
     });
 
+    const elems2 = document.querySelectorAll(".dropdown-trigger");
+    const instance2 = M.Dropdown.init(elems2, {
+      hover: false,
+      alignment: "center",
+      constrainWidth: true
+    });
     instance.close();
   }
 
@@ -44,24 +50,22 @@ class Navbar extends Component {
                 <Link to={homePath}>Home</Link>
               </li>
               <li>
-                <Link to={sobrePath}>
-                  Link 1
-                </Link>
+                <Link to={sobrePath}>Link 1</Link>
               </li>
               <li>
-                <Link to={blog}>
-                  Link 2
-                </Link>
+                <Link to={blog}>Link 2</Link>
               </li>
-              <li>
-                <Link to={contato}>
-                  Link 3
-                </Link>
+            <li data-target="dropdown1" className='dropdown-trigger'>
+              <Link to={contato}>Link 3<i class="material-icons right tiny">arrow_drop_down</i></Link>
               </li>
             </ul>
           </div>
         </nav>
-
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
         <ul className="sidenav" id="slide-out">
           <li>
             <Link to={homePath} className="font-nav style-button sidenav-close">

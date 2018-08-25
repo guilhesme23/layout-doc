@@ -28,3 +28,7 @@ nav {
 .sidenav li {
   font-size: 1.2em;
 }
+
+.dropdown-content {
+  background-color: #242424;
+}
