@@ -4,7 +4,7 @@ import Home from '../components/home'
 import Test from '../teste'
 
 export default () => (
-  <BrowserRouter basename="/">
+  <BrowserRouter basename="/layout-doc">
     <Switch>
       <Route path="/" exact render={props => <Home {...props} />} />
       <Route path="/test" exact component={Test} />

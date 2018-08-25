@@ -1,0 +1,64 @@
+#nav-container {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+nav ul li a.font-nav{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 15px;
+    transition: all 500ms ease-in-out;
+}
+
+nav ul li a.style-button:hover{
+    height: 59px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #E07E26;
+    border-bottom: 1px solid rgba(224, 125, 38, 0.726);
+    background-color: inherit;
+}
+
+nav.border-nav{
+    border-top-color: #E07E26;
+    border-width: 5px;
+}
+
+nav a img{
+    height: 2em;
+    padding-bottom: .25em;
+}
+
+.nav-wrapper {
+  margin-left: 11em;
+  margin-right: 8em;
+}
+
+@media (max-width: 993px) {
+  .nav-wrapper {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+}
+
+.sidenav-button {
+  background-color: inherit;
+  border: none;
+}
+
+.sidenav-button i {
+  color: rgba(0,0,0,0.8);
+  height: 100%;
+}
+
+.sidenav-button:focus, .sidenav-button:active {
+  background-color: inherit;
+  outline: none !important;
+}
+
+nav a.brand-logo.left{
+    height: 59px;
+}
+
+.sidenav li {
+  font-size: 1.2em;
+  border-bottom: 1px solid #E07E26;
+}
